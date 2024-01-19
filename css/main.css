@@ -1,8 +1,9 @@
 table {
-	width: 100%;
-	min-width: 120px;
+	width: 90%;
 	border-top: 1px solid #444444;
 	border-collapse: separate;
+	margin:auto;
+	border: 1;
 }
 th {
 	position: sticky;
@@ -38,6 +39,10 @@ td {
 }
 
 .chebytable th:nth-child(1) {
+	width:auto;
+}
+
+.chebytable th:nth-child(2) {
 	width:auto;
 }
 
@@ -78,6 +83,25 @@ body {
     position: relative;
 }
 p {
-	text-indent: -3%;
 	padding-left: 3%;
+}
+
+th:nth-child(1) {
+	width:90;
+}
+th:nth-child(2) {
+	width:45;
+}
+th:nth-child(3) {
+	width:45;
+}
+
+th:nth-last-child(1) {
+	width: 75%;
+	padding-left: 10px;
+	text-align: left;
+}
+
+td:nth-last-child(1) {
+	text-align: left;
 }

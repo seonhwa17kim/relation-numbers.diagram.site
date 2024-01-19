@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    270255,       6421]
+NotebookDataLength[    270257,       6421]
 NotebookOptionsPosition[    229784,       5956]
-NotebookOutlinePosition[    230215,       5973]
-CellTagsIndexPosition[    230172,       5970]
+NotebookOutlinePosition[    230217,       5973]
+CellTagsIndexPosition[    230174,       5970]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -356,9 +356,9 @@ Cell[BoxData[{
              RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
            RowBox[{"{", 
             RowBox[{
-             RowBox[{"Ceiling", "[", "m", "]"}], ",", 
-             RowBox[{"Floor", "[", "m", "]"}]}], "}"}]}], "]"}]}], "}"}], ",",
-        "\[IndentingNewLine]", 
+             RowBox[{"Floor", "[", "m", "]"}], ",", 
+             RowBox[{"Ceiling", "[", "m", "]"}]}], "}"}]}], "]"}]}], "}"}], 
+       ",", "\[IndentingNewLine]", 
        RowBox[{"{", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{
@@ -442,16 +442,16 @@ Cell[BoxData[{
 
  InitializationCell->True,
  CellChangeTimes->CompressedData["
-1:eJwlxUsogwEAB/DPcFgolLDG5rHDRnZwWUlZZmRZS1kOlnyacBG2MWnMY5aN
-pFZW2ygclKjllcSI5rGkZVketZYjWzKsRL7/5/DrV0D2NKoZBEGwKVgqvvX2
-8l/FO8KiczyUY/fhdjL2gusTZt6wMrJKfzDGSeqjPhXupuDq2vV07DK3ZuGA
-/DIXL0zzWHh7WMfBSR3OQmzdDPOxLNNUhr8ffOVYJwrLMDM6ocAbkucmfGIh
-J/GNOziHidHYGg45YvtY9Kg6xtnGyjN8tfQT7qdmBLti+F5dE8eHiV+/OKJv
-FmqovR8aenJA0I39TxZ6SfxjAhuLP+lVvM5ZbJX/bzJMjWipVwTLRszlu4+w
-Y97gwXvc5FQd9fVvRhrWVtzlYaW0pBTnh9g1+H1xkN6/ZZbhlvieAtexDW3Y
-o2CS2HkR0GOWzTaEU+wN49hVFTXhP/W61dM=
-  "],
- CellLabel->"In[6]:=",ExpressionUUID->"2a53999e-92ab-4584-a540-1df95dc28508"],
+1:eJwlzFsoQwEAh/FjpqxRiLDG3PawkfPgRUlZrlm0lOXBkiNyeZDb2NJmzMhG
+UooyFB5E1HJZEiOay5KWRS61lkfbkmEly/kfD1+/ty+d6qxpZhEEkUIHyyR3
+9i6RV7JHZl5AddK8AzZRgTdYGTb5DuW+NcbDYQG7m/aM3OfC4vLNGLg43pAA
+XdVXyXBuQsiDu4NKAWS3mDOgadsjgtI4Qy78eXLkQWW+Rwo5fr0MbpW81sJT
+IzUKby0P05AYCqxD90LgAOY/K05goq7wHF4v/3p6aFkPbQH42FwahEfh3yHo
+U9WRvbT2z15Gql/cDp0vRsaS4Kce6rK+GBXC1iloqv7XoBnT9tGuild0ME1k
+OYYLMxobtKZFRClpb0Kx0bCv4D4Fysuyc2Cqm18KP5YGGJ0741JYH7TKYAVf
+0whtMg4FzZcuFeTNzqohd75qBC4W+Q3MryN+wyz2SshILeMfiUPcZw==
+  
+  "],ExpressionUUID->"2a53999e-92ab-4584-a540-1df95dc28508"],
 
 Cell[TextData[{
  "Choose a range for ",
@@ -5955,7 +5955,7 @@ In[73]:=",ExpressionUUID->"80a61d07-3468-4b13-8475-564864849049"]
 }, Open  ]]
 },
 WindowSize->{980.25, 628.5},
-WindowMargins->{{93, Automatic}, {210.75, Automatic}},
+WindowMargins->{{Automatic, 331.5}, {66.75, Automatic}},
 Magnification:>1. Inherited,
 FrontEndVersion->"13.0 for Linux x86 (64-bit) (February 4, 2022)",
 StyleDefinitions->"Default.nb",
