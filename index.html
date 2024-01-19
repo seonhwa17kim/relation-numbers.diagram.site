@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+	<title>DIAGRAM.SITE</title>
+	<link rel="stylesheet" href="css/main.css">
+	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+
+		<!-- The loading of KaTeX is deferred to speed up page rendering -->
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+	
+		<!-- To automatically render math in text elements, include the auto-render extension: -->
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+			onload="renderMathInElement(document.body, {
+				delimiters: [
+					{left: '$$', right: '$$', display: true},
+					{left: '$', right: '$', display: false}
+				]
+			});"></script>
+		<script>
+			function copy_to_clipboard(idx){
+				const $textarea = document.createElement("textarea");
+				
+				document.body.appendChild($textarea);
+
+				$textarea.value = document.getElementById('apoly'+idx).value;
+				$textarea.select();
+				
+				document.execCommand('copy');
+				document.body.removeChild($textarea);
+				alert('Copied');
+			}
+
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<h1 align="center"> A-polynomial for two bridge knots ($\leq 12$ crossings)</h1> 
+	</head>
+
+
+	<body></body>
+		The followings are A-polynomials for first $28$ two bridge knots with $\leq 8$ crossings. 
+		<p> You can download <a href="data/221028_A_polynomial_12c_factor_reducing_index.csv"> HERE </a>  for .csv file of A-polynomials among all the two bridges knots with $\leq 12$ crossings.</p>
+
+		<table border="1" align="center">
+				<th> Index </th>
+				<th> Name </th>
+				<th> Schubert form </th>
+				<th> Conway form </th>
+				<th> A-polynomial </th>
+
+			<tr>
+					<td>1</td>
+					<td>3_1</td>
+					<td>S(3, 1)</td>
+					<td>[3]</td>
+				<td class="apoly">
+					<input id="apoly1" value="1 + L M^{6}" readonly hidden>
+					<button onclick="copy_to_clipboard(1)"> Copy</button> $1 + L M^{6}$</td>
+			</tr>
+			</table>
+	</body>
+</html>
