@@ -34,14 +34,70 @@
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-		<h1 align="center"> A-polynomial for two bridge knots ($\leq 12$ crossings)</h1> 
+		<h1 align="center"> Non-freeness of parabolic two-generator groups </h1> 
 	</head>
 
 
 	<body></body>
-		The followings are A-polynomials for first $28$ two bridge knots with $\leq 8$ crossings. 
-		<p> You can download <a href="data/221028_A_polynomial_12c_factor_reducing_index.csv"> HERE </a>  for .csv file of A-polynomials among all the two bridges knots with $\leq 12$ crossings.</p>
+		This page is a supplementary for a paper, titiled <i><b>Non-freeness of parabolic two-generator groups</b></i>.
+		<p> 
+			What we want to check is whether a subgroup of $\text{SL}(2, \mathbb{C})$
+			$$
+				G_\lambda = \langle \begin{pmatrix}1 & 1 \\ 0 & 1 \end{pmatrix}, \begin{pmatrix}1 & 0 \\ \lambda & 1 \end{pmatrix}\rangle
+			$$ is a free group of rank $2$ or not for a given $\lambda \in \mathbb{C}$. $\lambda$ is called a <b>relation number</b> if $G_\lambda$ is not a free group of rank $2$.
+			<br>
+			In the paper, we show $\lambda = -u^2$ is a relation number if and only if $u$ is a root of special kinds of univariate polynomial, called <b>generalized Chebyshev polynomials</b> with a specific initial condition, defined by recursive relation
+			$$
+				s^{\bf n}_{k+1}(t) = n_kt s_k^{\bf n}(t) - s_{k-1}^{\bf n}(t)
+			$$ for an integer sequence ${\bf n} = (n_1, n_2, \cdots)$ with $s^{\bf n}_0(t)=0$ and $s^{\bf n}_1(t)=1$. For example, we have the following table for small $k$.
+		</p>
+		<p>
+			<table border="1" class="chebytable">
+				<th> $k$ </th>
+				<th> $s_k^{\bf n}(t)$ </th>
+			<tr>
+				<td>$0$</td>
+				<td>$0$</td>
+			</tr>
+			<tr>
+				<td>$1$</td>
+				<td>$1$</td>
+			</tr>
+			<tr>
+				<td>$2$</td>
+				<td>$n_1 t$</td>
+			</tr>
+			<tr>
+				<td>$3$</td>
+				<td>$n_1 n_2 t^2-1$</td>
+			</tr>
+			<tr>
+				<td>$4$</td>
+				<td>$n_1 n_2 n_3t^3-(n_1 + n_3)t$</td>
+			</tr>
+			<tr>
+				<td>$5$</td>
+				<td>$n_1 n_2 n_3 n_4t^4 - (n_1 n_2 + n_1 n_4 + n_3 n_4)t^2 + 1$</td>
+			</tr>
+			<tr>
+				<td>$6$</td>
+				<td>$n_1 n_2 n_3 n_4 n_5 t^5 - (n_1 n_2 n_3 + n_1 n_2 n_5 + n_1 n_4 n_5 + n_3 n_4 n_5) t^3 + (n_1 + n_3 + n_5) t$</td>
+			</tr>
+			</table>
+		</p>
+		<p>
+			Such polynomials can not span all the polynomials in $\mathbb{Z}[t]$ so that a problem of finding ${\bf n} = (n_1, n_2, \cdots, n_{k})$ such that $s^{\bf n}_{k+1}(u) = 0$ for a given $u$ is not a trivial question.
+			It is well-known that $\lambda$ cannot be a relation number if $| \lambda | \geq 4$ and, on the other hand, it is conjectured whether all the rational numbers whose absolute value is smaller than $4$ are relation number or not.
+		</p>
+		<p>
+			We developed two algorithms, one for finding the shortest sequence ${\bf n}$ such that $s^{\bf n}_{k+1}(u)=0$ and the other for finding any such a sequence. 
+			Using these algorithms, we list $\lambda=p/q \in \mathbb{Q}$ for $0 < q < 23$ and $0 < p < 4q$ and its corresponding sequence ${\bf n}$ except $6$ cases $\lambda = 51/13, 67/17, 74/19, 75/19, 83/21, 87/22$.
+		</p>
+		<p>
+			You can download a Mathematica notebook implementing the algorithms <a href="data/240112_Relation_Number_Checker.nb">HERE</a>. We also implemented an algorithm for complex number $\lambda$ in the notebook.
+		</p>
 
+		<p> The following is a part of our result. Click <a href="data/">HERE</a> for all the result in .csv file.</p>
 		<table border="1" align="center">
 				<th> Index </th>
 				<th> Name </th>
